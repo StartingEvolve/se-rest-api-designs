@@ -24,14 +24,15 @@ paths:
               schema:
                 $ref: '#/components/schemas/Provider'
               examples:
-                organizations:
+                organization:
                   value:
                     id: 497f6eca-6276-4993-bfeb-53cbbbba6f08
-                    name: zabba a3chiri
+                    name: zabba
                     image: 'http://example.com'
                     email: user@example.com
                     password: pa$$word
                     description: string
+                    accountType: org
             application/xml:
               schema:
                 type: object
@@ -103,16 +104,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Provider'
-              examples:
-                New User Bob Fellow:
-                  value:
-                    id: 12
-                    firstName: Bob
-                    lastName: Fellow
-                    email: bob.fellow@gmail.com
-                    dateOfBirth: '1996-08-24'
-                    emailVerified: false
-                    createDate: '2020-11-18'
+              examples: {}
         '400':
           description: Missing Required Information
         '409':
@@ -158,14 +150,15 @@ paths:
               schema:
                 $ref: '#/components/schemas/Provider'
               examples:
-                home:
+                example-1:
                   value:
                     id: 497f6eca-6276-4993-bfeb-53cbbbba6f08
-                    name: zabba
+                    name: string
                     image: 'http://example.com'
                     email: user@example.com
                     password: pa$$word
                     description: string
+                    accountType: org
       operationId: get-users
 components:
   schemas:
@@ -180,6 +173,7 @@ components:
           email: user@example.com
           password: pa$$word
           description: string
+          accountType: org
       properties:
         id:
           type: string
@@ -198,6 +192,11 @@ components:
           format: password
         description:
           type: string
+        accountType:
+          type: string
+          enum:
+            - org
+            - independent
       required:
         - id
         - name
