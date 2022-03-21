@@ -8,7 +8,7 @@ paths:
   '/users/{userId}':
     parameters:
       - schema:
-          type: integer
+          type: string
         name: userId
         in: path
         required: true
