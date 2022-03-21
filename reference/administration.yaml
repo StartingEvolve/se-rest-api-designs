@@ -148,17 +148,48 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Provider'
+                type: array
+                minItems: 5
+                items:
+                  $ref: '#/components/schemas/Provider'
               examples:
                 example-1:
                   value:
-                    id: 497f6eca-6276-4993-bfeb-53cbbbba6f08
-                    name: string
-                    image: 'http://example.com'
-                    email: user@example.com
-                    password: pa$$word
-                    description: string
-                    accountType: org
+                    - id: 497f6eca-6276-4993-bfeb-53cbbbba6f08
+                      name: string
+                      image: 'http://example.com'
+                      email: user@example.com
+                      password: pa$$word
+                      description: string
+                      accountType: org
+                    - id: 497f6eca-6276-4993-bfeb-53cbbbba6f08
+                      name: string
+                      image: 'http://example.com'
+                      email: user@example.com
+                      password: pa$$word
+                      description: string
+                      accountType: org
+                    - id: 497f6eca-6276-4993-bfeb-53cbbbba6f08
+                      name: string
+                      image: 'http://example.com'
+                      email: user@example.com
+                      password: pa$$word
+                      description: string
+                      accountType: org
+                    - id: 497f6eca-6276-4993-bfeb-53cbbbba6f08
+                      name: string
+                      image: 'http://example.com'
+                      email: user@example.com
+                      password: pa$$word
+                      description: string
+                      accountType: org
+                    - id: 497f6eca-6276-4993-bfeb-53cbbbba6f08
+                      name: string
+                      image: 'http://example.com'
+                      email: user@example.com
+                      password: pa$$word
+                      description: string
+                      accountType: org
       operationId: get-users
 components:
   schemas:
