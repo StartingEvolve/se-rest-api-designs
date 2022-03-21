@@ -33,7 +33,20 @@ paths:
                     password: pa$$word
                     description: string
                     accountType: org
+                example-1:
+                  value:
+                    id: 497f6eca-6276-4993-bfeb-53cbbbba6f08
+                    name: string
+                    image: 'http://example.com'
+                    email: user@example.com
+                    password: pa$$word
+                    description: string
+                    accountType: org
             application/xml:
+              schema:
+                type: object
+                properties: {}
+            multipart/form-data:
               schema:
                 type: object
                 properties: {}
@@ -42,6 +55,7 @@ paths:
       operationId: get-users-userId
       description: Retrieve the information of the user with the matching user ID.
       x-internal: false
+      parameters: []
     patch:
       summary: Update User Information
       operationId: patch-users-userId
