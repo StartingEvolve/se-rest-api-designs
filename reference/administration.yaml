@@ -156,35 +156,35 @@ paths:
                 example-1:
                   value:
                     - id: 497f6eca-6276-4993-bfeb-53cbbbba6f08
+                      name: seiko
+                      image: 'http://example.com'
+                      email: user@example.com
+                      password: pa$$word
+                      description: string
+                      accountType: org
+                    - id: 497f6eca-6276-4993-bfeb-53ebbbba6f08
+                      name: nani
+                      image: 'http://example.com'
+                      email: user@example.com
+                      password: pa$$word
+                      description: string
+                      accountType: org
+                    - id: 497f6eca-6276-4993-bfab-53cbbbba6f08
                       name: string
                       image: 'http://example.com'
                       email: user@example.com
                       password: pa$$word
                       description: string
                       accountType: org
-                    - id: 497f6eca-6276-4993-bfeb-53cbbbba6f08
-                      name: string
+                    - id: 497f6eca-6276-49a3-bfeb-53cbbbba6f08
+                      name: abbix
                       image: 'http://example.com'
                       email: user@example.com
                       password: pa$$word
                       description: string
                       accountType: org
-                    - id: 497f6eca-6276-4993-bfeb-53cbbbba6f08
-                      name: string
-                      image: 'http://example.com'
-                      email: user@example.com
-                      password: pa$$word
-                      description: string
-                      accountType: org
-                    - id: 497f6eca-6276-4993-bfeb-53cbbbba6f08
-                      name: string
-                      image: 'http://example.com'
-                      email: user@example.com
-                      password: pa$$word
-                      description: string
-                      accountType: org
-                    - id: 497f6eca-6276-4993-bfeb-53cbbbba6f08
-                      name: string
+                    - id: 497f6eca-6276-49b3-bfeb-53cbbbba6f08
+                      name: zabba
                       image: 'http://example.com'
                       email: user@example.com
                       password: pa$$word
