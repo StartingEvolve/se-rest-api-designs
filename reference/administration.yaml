@@ -245,3 +245,15 @@ components:
       required:
         - id
         - name
+    Contributors:
+      title: Contributors
+      type: object
+      properties:
+        id:
+          type: string
+        firstName:
+          type: string
+        lastName:
+          type: string
+        image:
+          type: string
